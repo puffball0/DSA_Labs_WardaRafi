@@ -22,7 +22,7 @@ int findSubstring(const string text, const string pattern) {
 int main() {
     string text, pattern;
     text="xyz went to maths while cs got ijk";
-    pattern="";
+    pattern="abc";
 
     int result = findSubstring(text, pattern);
     if (result != -1) {
