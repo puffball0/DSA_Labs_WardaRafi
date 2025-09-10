@@ -13,9 +13,10 @@ vector<int> findAllIndices(int arr[], int size, int key) {
     return indices;
 }
 int main() {
-    //test case: multiple occurences
+    int count=0;
+    //test case: Key not present. 
     //declaring an array 
-    int arr[] = {1, 2, 3, 2, 4, 2};
+    int arr[] = {1, 5, 3, 16, 4, 1};
     //calculating the size of the array
     int size = sizeof(arr) / 4;
     //declaring a key to search in array
@@ -25,7 +26,11 @@ int main() {
     cout<<"Indices of "<<key<<" are:";
     for (int index : result) {
         cout << index << " ";
+        count++;
     }
+    cout<<endl;
+    if (count==0)
+        cout<<"Key not present in the array";
     cout<<endl;
     return 0;
 }
