@@ -14,11 +14,18 @@ vector<int> findAllIndices(int arr[], int size, int key) {
 }
 int main() {
     int count=0;
-    //test case: Key not present. 
+    //test case: Empty array 
     //declaring an array 
-    int arr[] = {1, 5, 3, 16, 4, 1};
+    int arr[] = {};
     //calculating the size of the array
     int size = sizeof(arr) / 4;
+
+    //exiting program if size is 0
+    if (size == 0) {
+        cout << "Array is empty." << endl;
+        return 0;
+    }
+
     //declaring a key to search in array
     int key = 2;
     //calling the function
