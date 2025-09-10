@@ -5,7 +5,7 @@ int findSubstring(const string text, const string pattern) {
     // Empty pattern case
     if (pattern.empty())
     { 
-        cout<<"Pattern not present"<<endl;
+        cout<<"Empty pattern"<<endl;
         return 0; 
     }
     int textLength = text.length();
