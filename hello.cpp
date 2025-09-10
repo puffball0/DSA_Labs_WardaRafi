@@ -1,13 +1,9 @@
-#include <iostream> 
+#include <iostream>
 
-using namespace std; 
+using namespace std;
 
- 
-
-int main() { 
-
-    cout << "Welcome to DSA Lab 1!" << endl; 
-
-    return 0; 
-
-} 
+int main() {
+    cout<<"using method 2"<<endl;
+    cout << "Welcome to DSA Lab 1!" << endl;
+    return 0;
+}
